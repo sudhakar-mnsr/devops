@@ -78,6 +78,9 @@
 				<configuration>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<checkModificationExcludes>
+      					<checkModificationExclude>pom.xml</checkModificationExclude>
+   				 	</checkModificationExcludes>
 				</configuration>
 			</plugin>
 		</plugins>
