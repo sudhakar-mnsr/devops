@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>devops</artifactId>
-	<version>1.3.0-SNAPSHOT</version>
+	<version>1.3.2-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>devops</name>
 	<description>Devops Demo project for Spring Boot</description>
@@ -33,8 +33,8 @@
 	<scm>
 		<connection>scm:git:git@github.com:sudhakar-mnsr/devops.git</connection>
 		<developerConnection>scm:git:git@github.com:sudhakar-mnsr/devops.git</developerConnection>
-			<url>git:git@github.com:sudhakar-mnsr/devops.git</url>
-			<tag>HEAD</tag>
+		<url>git:git@github.com:sudhakar-mnsr/devops.git</url>
+		<tag>HEAD</tag>
 	</scm>
 
 	<dependencies>
@@ -46,7 +46,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
@@ -78,8 +81,8 @@
 					<tagNameFormat>v@{project.version}</tagNameFormat>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<checkModificationExcludes>
-      					<checkModificationExclude>pom.xml</checkModificationExclude>
-   				 	</checkModificationExcludes>
+						<checkModificationExclude>pom.xml</checkModificationExclude>
+					</checkModificationExcludes>
 				</configuration>
 			</plugin>
 		</plugins>
