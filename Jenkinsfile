@@ -8,6 +8,9 @@ node {
   stage('Prepare') {
     mvnHome = tool 'Mavan'
   }
+  stage('Checkout scm') {
+    checkout scm
+  }
 
   stage('Build') {
      if (isUnix()) {
