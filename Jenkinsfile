@@ -19,7 +19,7 @@ node {
 
   stage('Unit Test') {
      junit '**/target/surefire-reports/Test-*.xml'
-     archive 'target/*.jar"
+     archive 'target/*.jar'
   }
 
   stage('Integration Test') {
