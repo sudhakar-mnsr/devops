@@ -1,0 +1,6 @@
+empty = ()
+numbers = (1,2,3,4)
+print(numbers)
+num1 = (1,2)
+num3 = (3,4)
+print(num1 + num3)
